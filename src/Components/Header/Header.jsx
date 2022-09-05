@@ -1,6 +1,6 @@
 import CVFile from './CVFile'
 import './Header.scss'
-import me from './../../images/me.jpg'
+import me from './../../images/me.png'
 import HeaderSocials from './HeaderSocials'
 
 const Header = () => {
@@ -13,7 +13,7 @@ const Header = () => {
            <CVFile/>
 		   <HeaderSocials/>
         	<div className="me">
-          		<img src={me} alt="me" />
+          		<img src={me} alt="me"/>
         	</div>
 			<a href="#Contact" className='scroll_down'>Scroll Down</a>
         </div>	
