@@ -1,0 +1,43 @@
+header{
+    height: 100vh;
+    padding-top: 7rem;
+    overflow: hidden;
+}
+
+.container_header{
+    text-align: center;
+    height: 100%;
+    position: relative;
+}
+
+/* CTFile */
+
+.ctfile{
+    margin-top: 2.5rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+/* HeaderSocials */
+.header_socials{
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem; 
+    position: absolute;
+    left: 0;
+    bottom: 3rem;
+    align-items: center;
+    &:after{
+        content: "";
+        width: 1px;
+        height: 2rem;
+        background-color: var(--color-primary);
+    }
+}
+
+.me{
+    width: 65%;
+    height: auto;
+    margin: 0 auto;
+}
