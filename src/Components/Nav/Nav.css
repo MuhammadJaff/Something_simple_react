@@ -1,0 +1,42 @@
+nav {
+  display: block;
+  padding: .8rem 1.8rem;
+  background-color: rgba(0, 0, 0, 0.3);
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  z-index: 2;
+  position: fixed;
+  left: 50%;
+  bottom: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: .8rem;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  border-radius: 3rem;
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+}
+
+nav a {
+  background: transparent;
+  padding: .7rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 50%;
+  font-size: 1.1rem;
+  color: var(--color-light);
+}
+
+nav a:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+nav .active {
+  background: var(--color-bg);
+  color: var(--color-white);
+}
+/*# sourceMappingURL=Nav.css.map */
