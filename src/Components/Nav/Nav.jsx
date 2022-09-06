@@ -9,14 +9,21 @@ import { useState } from 'react'
 
 const Nav = () => {
   const [active,setActive] = useState('#');
+
+  // const change = (e)=>{
+  //   e.className.add("active");
+  //   setActive(`#${e.id}`);
+  // }
   return (
     <nav>
       <a href="#" onClick={()=>setActive('#')} 
       className={active === "#" ? "active":""}><AiOutlineHome/></a>
       <a href="#about" onClick={()=>setActive('#about')} 
-      className={active === "#about" ? "active":""}><AiOutlineUser/></a>
+      className={active === "#about" ? "active":""}
+      ><AiOutlineUser/></a>
       <a href="#experience" onClick={()=>setActive('#experience')} 
-      className={active === "#experience" ? "active":""}><MdOutlineWorkOutline/></a>
+      className={active === "#experience" ? "active":""}
+      ><MdOutlineWorkOutline/></a>
       <a href="#service" onClick={()=>setActive('#service')} 
       className={active === "#service" ? "active":""}><RiServiceLine/></a>
       <a href="#contact" onClick={()=>setActive('#contact')} 

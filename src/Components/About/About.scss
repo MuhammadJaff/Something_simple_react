@@ -1,0 +1,17 @@
+.about_container{
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: 2rem;
+
+    .about_cards{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 2rem;
+        .about_card{
+            text-align: center;
+            padding: 2rem 1rem;
+            border: 2px solid var(--color-primary);
+            border-radius: 2rem;
+        }
+    }
+}
