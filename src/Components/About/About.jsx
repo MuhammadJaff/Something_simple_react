@@ -1,4 +1,4 @@
-import './About.css'
+import './About.scss'
 import meAbout from './../../images/me-about.jpg'
 import {FaAward} from 'react-icons/fa'
 import {FaChalkboardTeacher} from 'react-icons/fa'
@@ -11,7 +11,7 @@ const About = () => {
       <h2>About Me</h2>
       <div className="container about_container">
         <div className="about_me">
-          <img src={meAbout} alt="" />
+          <img src={meAbout} alt="me_about" />
         </div>
 
         <div className="about_content">
@@ -34,8 +34,9 @@ const About = () => {
           </div>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Rerum architecto animi iusto quae, corporis, eaque error
-            consequatur iste modi, sapiente tempore aperiam?
+            Veritatis nostrum minima ut laudantium recusandae ducimus 
+            fugit dolorum autem? Sint officiis sapiente, itaque blanditiis 
+            at voluptatum, aut ipsam corrupti praesentium quae ratione, sequi unde?
           </p>
 
           <a href="" className='btn btn-primary'>Let's Talk</a>
