@@ -1,0 +1,34 @@
+.container_experience{
+    text-align: center;
+    width: 75%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    .frontend_ex,.backend_ex{
+        padding-top: 2rem;
+        border: 1px solid transparent;
+        border-radius: 2rem;
+        background-color: var(--color-bg-variant);
+        &:hover{
+            background: transparent;
+            transition: var(--transition);
+            border-color:var(--color-primary-variant);
+        }
+    }
+    .back_come{
+        margin-top: 30%;
+    }
+    
+}
+
+.experience_content{
+    padding: 3rem 0;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+    .front_icon{
+        color: var(--color-primary);
+        font-size: 1.5rem;
+    }
+}
