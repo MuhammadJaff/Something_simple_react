@@ -1,3 +1,7 @@
+.about_section {
+  padding-top: 5rem;
+}
+
 .about_container {
   display: -ms-grid;
   display: grid;
@@ -75,6 +79,9 @@
 }
 
 @media screen and (max-width: 1024px) {
+  .about_section {
+    padding-top: 18rem;
+  }
   .about_container {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
@@ -86,7 +93,16 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  .about_content {
+    text-align: center;
+  }
+}
+
 @media screen and (max-width: 600px) {
+  .about_section {
+    padding-top: 6rem;
+  }
   .about_me {
     width: 65% !important;
     margin: 0 auto 2rem;
@@ -94,9 +110,6 @@
   .about_cards {
     -ms-grid-columns: (1fr)[2] !important;
         grid-template-columns: repeat(2, 1fr) !important;
-  }
-  .about_content {
-    text-align: center;
   }
 }
 /*# sourceMappingURL=About.css.map */

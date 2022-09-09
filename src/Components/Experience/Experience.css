@@ -1,6 +1,6 @@
 .container_experience {
   text-align: center;
-  width: 75%;
+  width: 85%;
   margin: 0 auto;
   display: -ms-grid;
   display: grid;
@@ -16,6 +16,10 @@
   background-color: var(--color-bg-variant);
 }
 
+.container_experience .frontend_ex h3, .container_experience .backend_ex h3 {
+  color: var(--color-primary);
+}
+
 .container_experience .frontend_ex:hover, .container_experience .backend_ex:hover {
   background: transparent;
   -webkit-transition: var(--transition);
@@ -24,7 +28,13 @@
 }
 
 .container_experience .back_come {
-  margin-top: 30%;
+  margin-top: 10%;
+  color: var(--color-white);
+}
+
+.container_experience .time {
+  font-size: 3rem;
+  color: var(--color-primary);
 }
 
 .experience_content {
@@ -36,8 +46,34 @@
   gap: 2rem;
 }
 
-.experience_content .front_icon {
+.experience_content .experience_item .front_icon {
   color: var(--color-primary);
   font-size: 1.5rem;
+}
+
+@media screen and (max-width: 1170px) {
+  .container_experience {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .container_experience {
+    width: 75%;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .backend_ex {
+    margin: 0 auto;
+    width: 75%;
+    padding-bottom: 3rem;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .experience_content {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
 }
 /*# sourceMappingURL=Experience.css.map */

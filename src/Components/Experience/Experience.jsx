@@ -1,5 +1,7 @@
 import './Experience.scss'
 import {BsPatchCheckFill} from 'react-icons/bs'
+import {GiSandsOfTime} from 'react-icons/gi'
+
 const Experience = () => {
   return (
     <section id="experience">
@@ -12,33 +14,45 @@ const Experience = () => {
           <div className="experience_content">
             <div className="experience_item">
               <BsPatchCheckFill className="front_icon"/>
-              <h4>HTML</h4>
-              <small className='text-light'>Experienced</small>
+              <div>
+                <h4>HTML</h4>
+                <small className='text-light'>Experienced</small>
+              </div>
             </div>
             <div className="experience_item">
               <BsPatchCheckFill className="front_icon"/>
-              <h4>CSS/SASS</h4>
-              <small className='text-light'>Intermediate</small>
+              <div>
+                <h4>CSS/SASS</h4>
+                <small className='text-light'>Intermediate</small>
+              </div>
             </div>
             <div className="experience_item">
               <BsPatchCheckFill className="front_icon"/>
-              <h4>BOOTSTRAP</h4>
-              <small className='text-light'>Intermediate</small>
+              <div>
+                <h4>BOOTSTRAP</h4>
+                <small className='text-light'>Intermediate</small>
+              </div>
             </div>
             <div className="experience_item">
               <BsPatchCheckFill className="front_icon"/>
-              <h4>JAVASCRIPT</h4>
-              <small className='text-light'>Intermediate</small>
+              <div>
+                <h4>JAVASCRIPT</h4>
+                <small className='text-light'>Intermediate</small>
+              </div>
             </div>
             <div className="experience_item">
               <BsPatchCheckFill className="front_icon"/>
-              <h4>REACT</h4>
-              <small className='text-light'>Intermediate</small>
+              <div>
+                <h4>REACT</h4>
+                <small className='text-light'>Intermediate</small>
+              </div>
             </div>
             <div className="experience_item">
               <BsPatchCheckFill className="front_icon"/>
-              <h4>Redux</h4>
-              <small className='text-light'>Beginner</small>
+              <div>
+                <h4>Redux</h4>
+                <small className='text-light'>Beginner</small>
+              </div>
             </div>
           </div>
 
@@ -46,6 +60,7 @@ const Experience = () => {
         <div className="backend_ex">
           <h3>Backend Development</h3>
           <h2 className='back_come'>Coming soon...</h2>
+          <GiSandsOfTime className='time'/>
         </div>
       </div>
     </section>
