@@ -6,7 +6,7 @@ import Experience from './Components/Experience/Experience'
 import Footer from './Components/Footer/Footer'
 import Nav from './Components/Nav/Nav'
 import Service from './Components/Service/Service'
-import Testimonial from './Components/Testimonial/Testimonial'
+import History from './Components/History/History'
 import Portfolio from './Components/Portfolio/Portfolio'
 
 const App = () => {
@@ -18,7 +18,7 @@ const App = () => {
 		<Experience/>
 		<Service/>
 		<Portfolio/>
-		<Testimonial/>
+		<History/>
 		<Contact/>
 		<Footer/>		
     </div>
