@@ -1,0 +1,41 @@
+.history_container {
+  width: 38rem;
+}
+
+.history_container .history_item {
+  background-color: var(--color-bg-variant);
+  padding: 2rem;
+  border-radius: 2rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr;
+  gap: 2rem;
+}
+
+.history_container .history_item img {
+  width: 10rem;
+  margin: auto 0;
+}
+
+.history_container .history_item .period {
+  color: var(--color-primary);
+  font-weight: bold;
+}
+
+@media screen and (max-width: 760px) {
+  .history_container {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .history_container {
+    width: 85%;
+  }
+  .history_container .history_item {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+/*# sourceMappingURL=History.css.map */
