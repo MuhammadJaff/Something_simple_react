@@ -44,7 +44,7 @@ const Portfolio = () => {
       id:6,
       image:img6,
       github:"https://github.com/MuhammadJaff/React_simple_ffs24",
-      title:"Fast_Food_Service"
+      title:"Fast Food Service"
     }
   ]
 
