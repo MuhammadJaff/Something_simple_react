@@ -2,8 +2,22 @@ import './Contact.scss'
 import {BiEnvelope} from 'react-icons/bi'
 import {TbBrandTelegram} from 'react-icons/tb'
 import {AiOutlinePhone} from 'react-icons/ai'
+import { useRef } from 'react';
+import emailjs from 'emailjs-com';
 
 const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_ck8xdk7', 'template_ww4myn6', form.current, 'xldzS1hAZGyabIL-c')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
 
   const data = [
     {
@@ -24,7 +38,7 @@ const Contact = () => {
       id:3,
       logo:<AiOutlinePhone/>,
       name:"Mobile phone",
-      address:"998946535535",
+      address:"+998946535535",
       link:"+998946535535"
     }
   ]
@@ -50,12 +64,14 @@ const Contact = () => {
             }
         </div>
         <div className="contact_email">
-          <div>
-            <input className='email_input' type="text" placeholder='Your Name...'/><br />
-            <input className='email_input' type="text" placeholder='Your Email...'/>
-          </div>
-            <textarea className='email_textarea' placeholder='Your message...' cols="30" rows="10"></textarea>
-            <button className='btn btn-primary'>Send Message</button>
+          <form ref={form} onSubmit={sendEmail}>
+            <div>
+              <input required className='email_input' name='name' type="text" placeholder='Your Name...'/><br />
+              <input required className='email_input' name='email' type="text" placeholder='Your Email...'/>
+            </div>
+              <textarea required className='email_textarea' name='message' placeholder='Your message...' cols="10" rows="10"></textarea>
+              <button type='submit' className='btn btn-primary'>Send Message</button>
+          </form>
         </div>
       </div>
     </section>
