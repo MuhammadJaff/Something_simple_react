@@ -18,6 +18,11 @@
   margin: auto 0;
 }
 
+.history_container .history_item h5 {
+  text-align: left;
+  font-size: .9rem;
+}
+
 .history_container .history_item .period {
   color: var(--color-primary);
   font-weight: bold;

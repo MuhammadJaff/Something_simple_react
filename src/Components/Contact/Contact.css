@@ -1,0 +1,79 @@
+.contact_container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 5fr;
+      grid-template-columns: 2fr 5fr;
+  gap: 8rem;
+}
+
+.contact_container .contact_messenger {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.contact_container .contact_messenger article {
+  padding: 2rem;
+  border: 2px solid transparent;
+  text-align: center;
+  background-color: var(--color-bg-variant);
+  border-radius: 2rem;
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
+}
+
+.contact_container .contact_messenger article:hover {
+  border-color: var(--color-bg-variant);
+  background: transparent;
+}
+
+.contact_container .contact_messenger article h4 {
+  font-size: 2rem;
+  color: var(--color-primary);
+}
+
+.contact_container .contact_email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+}
+
+.contact_container .contact_email .email_input, .contact_container .contact_email .email_textarea {
+  background: transparent;
+  padding: 1.5rem;
+  font-size: 1rem;
+  border: 2px solid var(--color-bg-variant);
+  border-radius: .6rem;
+  margin-bottom: 2rem;
+  color: var(--color-light);
+  width: 100%;
+}
+
+.contact_container .contact_email .email_textarea {
+  resize: none;
+  margin-bottom: 0rem;
+}
+
+@media screen and (max-width: 1170px) {
+  .contact_container {
+    gap: 3rem;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .contact_container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .contact_container .contact_messenger {
+    margin: 0 auto;
+  }
+}
+/*# sourceMappingURL=Contact.css.map */

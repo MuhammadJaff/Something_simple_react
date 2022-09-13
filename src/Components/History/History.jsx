@@ -61,7 +61,7 @@ const History = () => {
                   <img src={image} alt={title} />
                   <div>
                       <h3 className='period'>{period}</h3>
-                      <h4>{text}</h4>
+                      <h5>{text}</h5>
                   </div>
                 </SwiperSlide>
               )
