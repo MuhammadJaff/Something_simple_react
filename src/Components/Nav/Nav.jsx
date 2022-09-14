@@ -10,9 +10,18 @@ import { useState } from 'react'
 const Nav = () => {
   const [active,setActive] = useState('#');
 
-  // const change = (e)=>{
-  //   e.className.add("active");
-  //   setActive(`#${e.id}`);
+  // {
+    // (function(){
+    //   [...document.querySelectorAll('.navbar')].forEach(nav=>{
+    //     nav.addEventListener('click', ()=>{
+    //       document.querySelector('.active').classList.remove('active');
+    //       document.getElementById(nav.dataset.id).classList.add('active');
+    //       setActive(`#${nav.dataset.id}`);
+    //       console.log(nav.dataset.id)
+    //     });
+    //     console.log(active);
+    //   })
+    // })()
   // }
   return (
     <nav>
@@ -28,6 +37,11 @@ const Nav = () => {
       className={active === "#portfolio" ? "active":""}><DiCodeigniter/></a>
       <a href="#contact" onClick={()=>setActive('#contact')} 
       className={active === "#contact" ? "active":""}><BiMessageRounded/></a>
+      {/* <a href="#" className='navbar'><AiOutlineHome/></a>
+      <a href="#about" className='navbar'><AiOutlineUser/></a>
+      <a href="#experience" className='navbar'><MdOutlineWorkOutline/></a>
+      <a href="#portfolio" className='navbar'><DiCodeigniter/></a>
+      <a href="#contact" className='navbar'><BiMessageRounded/></a> */}
     </nav>
   )
 }

@@ -33,10 +33,9 @@ const About = () => {
             </div>
           </div>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Veritatis nostrum minima ut laudantium recusandae ducimus 
-            fugit dolorum autem? Sint officiis sapiente, itaque blanditiis 
-            at voluptatum, aut ipsam corrupti praesentium quae ratione, sequi unde?
+          Who am I? This question always makes me ponder. I am a son, 
+          brother, friend, initially a student of life, sometimes passed,
+          sometimes failed its exams. And I am on the path of this mortal life.
           </p>
 
           <a href="" className='btn btn-primary'>Let's Talk</a>
