@@ -2,7 +2,7 @@ import './Nav.scss'
 import {AiOutlineHome} from 'react-icons/ai'
 import {AiOutlineUser} from 'react-icons/ai'
 import {MdOutlineWorkOutline} from 'react-icons/md'
-import {RiServiceLine} from 'react-icons/ri'
+import {DiCodeigniter} from 'react-icons/di'
 import {BiMessageRounded} from 'react-icons/bi'
 import { useState } from 'react'
 
@@ -24,8 +24,8 @@ const Nav = () => {
       <a href="#experience" onClick={()=>setActive('#experience')} 
       className={active === "#experience" ? "active":""}
       ><MdOutlineWorkOutline/></a>
-      <a href="#service" onClick={()=>setActive('#service')} 
-      className={active === "#service" ? "active":""}><RiServiceLine/></a>
+      <a href="#portfolio" onClick={()=>setActive('#portfolio')} 
+      className={active === "#portfolio" ? "active":""}><DiCodeigniter/></a>
       <a href="#contact" onClick={()=>setActive('#contact')} 
       className={active === "#contact" ? "active":""}><BiMessageRounded/></a>
     </nav>
